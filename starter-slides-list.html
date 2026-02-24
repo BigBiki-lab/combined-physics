@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starter slides list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 2em;
+  padding: 2em;
+  pointer-events: none;
+  overflow-wrap: break-word;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: .25em;
+    transition: 250ms 50ms;
+    pointer-events: auto;
+  }
+
+  &:hover img:not(:hover) {
+    filter: saturate(.2) opacity(.5);
+  }
+}
+
+h2 {
+   font-size: 30px;
+   margin; 3rem;
+   text-align: center;
+}
+
+p {
+   font-size: 30px;
+   text-align: center;
+   margin: 2rem;
+}
+
+    </style>
+</head>
+<body>
+
+<h2>Particle model</h2>
+<section class="gallery">
+    <p>ffmglgflkvm'm'egm'egm'ema'pgm'kfvmzlkmvl</p>
+    <img src="https://picsum.photos/600/400?random=1">
+    <img src="https://picsum.photos/600/400?random=2">
+    <img src="https://picsum.photos/600/400?random=3">
+    <img src="https://picsum.photos/600/400?random=4">
+    <img src="https://picsum.photos/600/400?random=5">
+    <img src="https://picsum.photos/600/400?random=6">
+    <img src="https://picsum.photos/600/400?random=7">
+    <img src="https://picsum.photos/600/400?random=8">
+    <img src="https://picsum.photos/600/400?random=9">
+    <img src="https://picsum.photos/600/400?random=10">
+    <img src="https://picsum.photos/600/400?random=11">
+    <img src="https://picsum.photos/600/400?random=12">
+</section>
+</body>
+</html>
