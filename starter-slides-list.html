@@ -7,32 +7,25 @@
 
     <style>
         * {
-  box-sizing: border-box;
+        border-radius: 10px;
 }
+
 
 body {
   margin: 0;
 }
 
-.gallery {
+.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 2em;
   padding: 2em;
   pointer-events: none;
   overflow-wrap: break-word;
+}
 
-  img {
-    display: block;
-    width: 100%;
-    border-radius: .25em;
-    transition: 250ms 50ms;
-    pointer-events: auto;
-  }
-
-  &:hover img:not(:hover) {
-    filter: saturate(.2) opacity(.5);
-  }
+.container, a {
+    background-color: yellow;
 }
 
 h2 {
@@ -41,10 +34,11 @@ h2 {
    text-align: center;
 }
 
-p {
+a {
    font-size: 30px;
    text-align: center;
-   margin: 2rem;
+   margin: 3rem;
+   text-decoration: none;
 }
 
     </style>
@@ -52,20 +46,14 @@ p {
 <body>
 
 <h2>Particle model</h2>
-<section class="gallery">
-    <p>ffmglgflkvm'm'egm'egm'ema'pgm'kfvmzlkmvl</p>
-    <img src="https://picsum.photos/600/400?random=1">
-    <img src="https://picsum.photos/600/400?random=2">
-    <img src="https://picsum.photos/600/400?random=3">
-    <img src="https://picsum.photos/600/400?random=4">
-    <img src="https://picsum.photos/600/400?random=5">
-    <img src="https://picsum.photos/600/400?random=6">
-    <img src="https://picsum.photos/600/400?random=7">
-    <img src="https://picsum.photos/600/400?random=8">
-    <img src="https://picsum.photos/600/400?random=9">
-    <img src="https://picsum.photos/600/400?random=10">
-    <img src="https://picsum.photos/600/400?random=11">
-    <img src="https://picsum.photos/600/400?random=12">
-</section>
+
+<div class="container">
+    <a href="Starter-slide.html" target="_blank">Specific heat capacity</a>
+    <a href="#">Specific latent heat</a>
+    <a href="#">Gas temperature and pressure</a>
+    <a href="#">Bending and stretching</a>
+    <a href="#">Extension and energy transfers</a>
+</div>
+
 </body>
 </html>
