@@ -76,16 +76,36 @@
             width: 100%;
             }
         }
+
       div.center {
         text-align: center;
-        margin: 300px;
+        margin-top: 300px;
+        margin-bottom: 300px;
+
+      @media (max-width: 64rem){ iframe
+        {
+        width: calc(33.333333% - 2rem);
+      }
+      }
+
+      @media (max-width: 48rem) { iframe {
+        width: calc(50% - 2rem);
+      }
+      }
+
+      @media (max-width: 32rem){ iframe
+        {
+        width: 100%;
+        margin: 0 0 2rem 0;
+      }
+      }
 
       @media (max-width: 600px) {iframe {
              width: auto;
              height: auto;
-             }
         }
         }
+      }
     </style>
 </head>
 <body>
